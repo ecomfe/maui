@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "maui",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A possibly extensible framework for LLM to be aware of your UI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=v18.20.0"
+  },
+  "scripts": {
+    "lint": "nx affected -t lint",
+    "build": "nx affected -t build",
+    "build-clean": "nx affected -t clean build",
+    "test": "nx affected -t test",
+    "ci": "pnpm install --frozen-lockfile && nx run-many -t clean build lint test",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "copilot",
+    "vscode"
+  ],
+  "homepage": "https://github.com/otakustay/coding-copilot-elements",
+  "bugs": {
+    "url": "https://github.com/otakustay/coding-copilot-elements/issues"
+  },
+  "author": "Gray Zhang <otakustay@gmail.com> (https://github.com/otakustay)",
+  "repository": "github:otakustay/coding-copilot-elements",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/eslint-plugin": "^7.24.7",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@ecomfe/eslint-config": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "dprint": "^0.47.0",
+    "husky": "^9.0.11",
+    "nx": "19.4.0",
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "pnpm@9.5.0-beta.0+sha256.bd91cddc9b205c94b5bf0380cec8fc8e4b1dde7b8c5191732f3d4e73848e860e"
+}
