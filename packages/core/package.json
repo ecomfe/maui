@@ -19,6 +19,7 @@
     "dist"
   ],
   "dependencies": {
+    "@types/json-schema": "^7.0.15"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^1.4.0",
